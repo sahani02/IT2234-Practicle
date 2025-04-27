@@ -1,0 +1,67 @@
+//insert one student data at one time
+db.students.insertOne({
+  "regno": "2021ICT003",
+  "name": "Bandara",
+  "age": 25,
+  "degree": "IT",
+  "gpa": 3,
+  "skils": [
+    "Java",
+    "MathLab",
+    "Node"
+  ],
+  "gender": "Male"
+}
+)
+
+//insert many students data at one time
+db.students.insertMany([
+	{
+	  "regno": "2021ICT004",
+	  "name": "Sahani",
+	  "age": 23,
+	  "degree": "IT",
+	  "gpa": 3.3,
+	  "skils": [
+		"Java",
+		"MathLab",
+		"JS"
+	  ],
+	  "gender": "Female"
+	},
+	{
+	  "regno": "2021ICT005",
+	  "name": "Yenu",
+	  "age": 23,
+	  "degree": "IT",
+	  "gpa": 3.3,
+	  "skils": [
+		"Java",
+		"MathLab",
+		"SQL"
+	  ],
+	  "gender": "Female"
+	}
+]
+)
+
+//displaygender=Female and 
+db.students.find({"gender":"Female"})
+
+//display details short by gpa
+db.students.find().sort({'gpa':1})
+
+//display degree=IT and short by gpa
+db.students.find({'degree':'IT'}).sort({'gpa':1})
+
+//display degree=IT And gender=Male and short by age
+db.students.find({'degree':'IT','gender':'Male'}).sort({'age':1})
+
+//display degree=IT And gender=Female and short by age
+db.students.find({'degree':'IT','gender':'Female'}).sort({'age':1})
+
+//display degree=IT And gender=Female and short by gpa
+db.students.find({'degree':'IT','gender':'Female'}).sort({'gpa':1})
+
+//display degree=IT And gender=Male and short by gpa
+db.students.find({'degree':'IT','gender':'Male'}).sort({'gpa':-1})

@@ -1,0 +1,41 @@
+//find name and age
+  project: {
+    name: 1,
+    age: 1
+  }
+
+
+//find name and age without id
+  project: {
+    name: 1,
+    age: 1,
+    _id: 0
+  }
+
+
+//display details regno=2021ICT002
+{regno: '2021ICT002'}
+
+//display age<=25
+{age:{$lte:25}}
+
+//display age<25
+{age:{$lt:25}}
+
+//display age>23
+{age:{$gt:23}}
+
+//display age>=23
+{age:{$gte:23}}
+
+//display who have MongoDb skils
+{skils:{$in:['MongoDb']}}
+
+//display who have MongoDb and Java skils
+{skils:{$in:['MongoDb','Java']}}
+
+//display who not have MongoDb skils
+{skils:{$nin:['MongoDb']}}
+
+//sort field
+{gpa:-1}
