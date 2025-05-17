@@ -83,7 +83,6 @@
     db.books.updateOne({ title: "Brave New World" }, { $inc: { rating: 0.1 } })
     ✔ Increments rating by 0.1 for the book "Brave New World".
 
-![Screenshot 2025-05-17 193217](https://github.com/user-attachments/assets/992a9c34-7b90-4145-99e0-b127f1a59c58)
 ![Screenshot 2025-05-17 193142](https://github.com/user-attachments/assets/121db3dc-2da6-4918-87b2-906b354ecd6b)
 
     (12) Add genre "Classic" to "The Great Gatsby"
@@ -94,9 +93,9 @@
     )
     ✔ Adds "Classic" to the genres array only if it's not already present ($addToSet prevents duplicates).
 
+![Screenshot 2025-05-17 193157](https://github.com/user-attachments/assets/b124d803-fc0c-49e0-b135-1132234e3f6d)
 ![Screenshot 2025-05-17 193252](https://github.com/user-attachments/assets/46c73cef-13f7-4e44-9a38-922c812980f8)
 ![Screenshot 2025-05-17 193235](https://github.com/user-attachments/assets/52aae9b1-3616-497e-a013-9c9c1a8dbbe5)
-![Screenshot 2025-05-17 193157](https://github.com/user-attachments/assets/b124d803-fc0c-49e0-b135-1132234e3f6d)
 
     (13) Sort books by published_year ascending
     
