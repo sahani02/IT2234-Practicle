@@ -1,4 +1,3 @@
-# 🍃 studentApp - Using Mongoose
 
 ![1](https://github.com/user-attachments/assets/68c8cc1e-cae8-4fc1-8840-23248ba0900e)
 
